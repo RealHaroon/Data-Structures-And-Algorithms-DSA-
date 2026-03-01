@@ -2,7 +2,7 @@
 ---
 
 
-```markdown
+
 # ☕ Data Structures and Algorithms (DSA) in Java
 
 Welcome to my **Data Structures and Algorithms** repository, featuring clean and well-structured implementations in **Java**.

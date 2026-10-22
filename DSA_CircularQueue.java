@@ -50,6 +50,7 @@ class myCircularQueue{
     public int deQueue(){
         if (isEmpty()) {
             System.out.println("Queue is Empty :)");
+            return -1;
             
         }
         int result=queue[front];
@@ -65,6 +66,9 @@ class myCircularQueue{
     }
 
     public int Peek(){
+        if(isEmpty()){
+            return -1;
+        }
        
         return queue[front];
 
@@ -76,7 +80,7 @@ public void display(){
         return;
     }
     for (int elements : queue) {
-        System.out.println(elements);
+        System.out.print(" "+elements);
         
     }
 }
@@ -115,19 +119,25 @@ public class DSA_CircularQueue {
         cq.enQueue(6);
         cq.enQueue(7);
         cq.display();
-        System.out.println("Capacity is  "+cq.getcapacity());
-        System.out.println("Size is "+cq.SizeOfQueue());
-        System.out.println("Removed"+cq.deQueue());
-        cq.enQueue(8);
-        System.out.println("Peek is : "+cq.Peek());
+        System.out.println();
         System.out.println("Removed : "+cq.deQueue());
-        cq.enQueue(9);
-        System.out.println("Peek is :"+cq.Peek());
         cq.display();
-       System.out.println("Is it empty?"+cq.isEmpty());
-        System.out.println("Is it full?"+cq.isFull());
-        cq.Qclear();
-        System.out.println("Is it empty?"+cq.isEmpty());
+        System.out.println();
+        System.out.println("Peek"+cq.Peek());
+
+    //     System.out.println("Capacity is  "+cq.getcapacity());
+    //     System.out.println("Size is "+cq.SizeOfQueue());
+    //     System.out.println("Removed"+cq.deQueue());
+    //     cq.enQueue(8);
+    //     System.out.println("Peek is : "+cq.Peek());
+    //     System.out.println("Removed : "+cq.deQueue());
+    //     cq.enQueue(9);
+    //     System.out.println("Peek is :"+cq.Peek());
+    //     cq.display();
+    //    System.out.println("Is it empty?"+cq.isEmpty());
+    //     System.out.println("Is it full?"+cq.isFull());
+    //     cq.Qclear();
+    //     System.out.println("Is it empty?"+cq.isEmpty());
         
 
         

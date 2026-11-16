@@ -1,8 +1,3 @@
-
----
-
-
-
 # ☕ Data Structures and Algorithms (DSA) in Java
 
 Welcome to my **Data Structures and Algorithms** repository, featuring clean and well-structured implementations in **Java**.
@@ -13,43 +8,54 @@ Welcome to my **Data Structures and Algorithms** repository, featuring clean and
 
 ## 🚀 What's Included?
 
-This repo contains solutions and implementations of:
+| Folder | Topic | Files |
+|---|---|---|
+| [`arrays/`](arrays) | Arrays & matrices | `DSA_ArrayList`, `DSA_CopyingData`, `DSA_Swapping`, `DSA_Matrix`, `DSA_Periodicmatrix` |
+| [`basics/`](basics) | Math & logic building | `DSA_Average`, `DSA_Count`, `DSA_MinandMax`, `DSA_ModeandMedian`, `DSA_Summation` |
+| [`linkedlist/`](linkedlist) | Linked lists (singly, circular) | `DSA_LinkedList`, `DSA_LinkedListC`, `DSA_CircularLinkedList` (Java + C++) |
+| [`stack/`](stack) | Stacks | `DSA_Stackimplementation`, `DSA_StackimplementationResizeable` |
+| [`queue/`](queue) | Queues | `DSA_Queue`, `DSA_CircularQueue`, `DSA_DEQueue`, `DSA_PriorityQueue`, `DSA_PriorityQueueC` |
+| [`trees/`](trees) | Trees | `DSA_BinaryTree`, `DSA_BinarySearchTree` |
+| [`sorting/`](sorting) | Sorting algorithms | Bubble, Insertion, Selection, Merge, Merge (linked list), Quick |
+| [`searching/`](searching) | Searching algorithms | `DSA_Linear_Search`, `DSA_Binary_search` |
+| [`recursion/`](recursion) | Recursion | `RecursionPractice` |
 
-- 🔁 **Recursion**
-- 📦 **Stacks and Queues**
-- 🔗 **Linked Lists** (Singly, Doubly, Circular)
-- 🌲 **Trees** (Binary Trees, BST, AVL, etc.)
-- 📊 **Sorting Algorithms** (Bubble, Merge, Quick, etc.)
-- 🔍 **Searching Algorithms** (Linear, Binary Search)
-- 🧠 **Backtracking**
-- 💡 **Greedy Algorithms**
-- ⛓️ **Graphs** (BFS, DFS, Dijkstra, etc.)
-- 🧱 **Dynamic Programming (DP)**
-- 🧮 **Mathematical Algorithms**
-- 🧩 **Bit Manipulation**
+### 🛣️ Planned
+
+- 🧠 Backtracking
+- 💡 Greedy Algorithms
+- ⛓️ Graphs (BFS, DFS, Dijkstra)
+- 🧱 Dynamic Programming
+- 🧩 Bit Manipulation
 
 ---
 
 ## 📁 Project Structure
 
 ```
-
 Data-Structures-And-Algorithms-DSA-/
-├── Arrays/
-├── Strings/
-├── LinkedList/
-├── Trees/
-├── Graphs/
-├── Sorting/
-├── Searching/
-├── Recursion/
-├── DP/
-├── Stack\_Queue/
+├── arrays/
+├── basics/
+├── linkedlist/
+├── queue/
+├── recursion/
+├── searching/
+├── sorting/
+├── stack/
+├── trees/
 └── README.md
-
 ```
 
-Each folder contains `.java` files with descriptive names and clean code.
+Each folder is a Java package with the same name (e.g. files in `sorting/` declare `package sorting;`).
+
+### ▶️ Running a program
+
+From the repository root:
+
+```bash
+javac -d out sorting/*.java
+java -cp out sorting.DSA_BubbleSorting
+```
 
 ---
 

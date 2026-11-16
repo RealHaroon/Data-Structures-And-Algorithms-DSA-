@@ -1,0 +1,14 @@
+# Build output
+*.class
+*.exe
+*.o
+out/
+bin/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+*.lnk
+.DS_Store
+Thumbs.db
